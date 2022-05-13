@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Calibri';
+    background: #dcdcdc;
+}
+.container{
+    background: none;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px ;
+}
+:root{
+    --color1: #24303c;
+    --color2: #182028;
+    --color3: #ffffff;
+    --color4: rgb(14, 81, 88);
+}
+
+.form{
+   
+    max-width: 400px;
+    padding: 30px 50px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 1%;
+    background: linear-gradient(var(--color1) 0, var( --color2) 70%);
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+
+.form-input{
+    margin-top: 10px;
+    
+}
+
+.form-input-chek h5{
+    font-size: 18px;
+    color: var(--color4);
+    margin-bottom: 5px;
+}
+.form-input-chek label{
+    color: rgb(169, 170, 171);
+}
+
+
+
+.form-input input{
+    width: 100%;
+    border: 1px solid var(--color4) ;
+    outline-color: var(--color4);
+    border-radius: 4px;
+    padding-bottom: 2%;
+    font-size: 18px;
+    padding: 10px;
+    background: none;
+    margin-top: 10px;
+    font-family: 'Calibri';
+    color: aliceblue;
+    
+
+}
+
+.form-button input{
+     background: black;
+     color: white;
+     border: none;
+     padding: 10px;
+     width: 100%;
+     font-size: 16px;
+     display: block;
+     margin: auto;
+     margin-top: 40px;
+
+    
+}
+select{
+    background: #84a5c6;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+
+.form-button input:hover{
+    background: white;
+    color: black;
+    transition: 0.5s ;
+}
+.errors{
+    color: red;
+    font-size: 10px;
+    margin-top: 0px;
+   
+}
+

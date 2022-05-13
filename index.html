@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form action="registro.php" method="post" class="form" id="form" >  
+            <div class="form-input dni">
+                <h1>Datos Personales</h1>
+                <input type="text" id="dni" maxlength="8" autocomplete="off" placeholder="DNI" name="dni" >               
+                <p class="errors"></p>
+            </div>
+            <div class="form-input nombre">
+                <input type="text" id="nombre" placeholder="Nombre" autocomplete="off" name="nombre" >     
+                <p class="errors"></p>
+            </div>
+            <div class="form-input apellido">
+                <input type="text" id="apellido" placeholder="Apellido" autocomplete="off" name="apellido" >               
+                <p class="errors"></p>
+
+            </div>
+            <div class="form-input domicilio">
+                <input type="text" id="domicilio" placeholder="Domicilio" autocomplete="off" name="domicilio" >                
+                <p class="errors"></p>
+            </div>
+            <div class="form-input localidad">
+                <input type="text" id="localidad" placeholder="Localidad" autocomplete="off" name="localidad" >              
+                <p class="errors"></p>
+            </div>    
+            <div class="form-input provincia">            
+                <input type="text" id="provincia" placeholder="Provincia" autocomplete="off" name="provincia" >
+                <p class="errors"></p>
+            </div>
+            <div class="form-input codP">
+                <input type="text" id="codP" maxlength="4" placeholder="Cod. Postal" autocomplete="off" name="codP" >              
+                <p class="errors"></p>
+            </div>
+            <div class="form-input-chek sexoM sexoF">    
+                <h5>Sexo</h5>      
+                <input type="radio" value="Masculino" name="sexo" id="sexoM">
+                <label for="sexo">Masculino</label><br>
+                <input type="radio" value="Femenino" name="sexo" id="sexoF">
+                <label for="sexo">Femenino</label>
+                <p class="errors"></p>
+            </div>    
+            
+            <div class="form-input-chek estudios1 estudios2 estudios3 estudios4 estudios5">
+                <h5>Estudios cursados</h5>
+                <input type="checkbox" id="estudios1" name="estudios" value="Primarios">
+                <label for="estudios">Primarios</label><br>
+                <input type="checkbox" id="estudios2" name="estudios" value="Primarios">
+                <label for="estudios">Secundarios Completos</label><br>
+                <input type="checkbox" id="estudios3" name="estudios" value="Primarios">
+                <label for="estudios">Secundarios Incompletos</label><br>
+                <input type="checkbox" id="estudios4" name="estudios" value="Primarios">
+                <label for="estudios">Terciarios Completos</label><br>
+                <input type="checkbox" id="estudios5" name="estudios" value="Primarios">
+                <label for="estudios">Terciarios Inconpletos</label><br>
+                <p class="errors"></p>
+            </div>
+            <div class="form-input-chek cursos">
+                <h5 for="">Curso Elegido</h5>
+                <select name="cursos" id="cursos">
+                    <option selected disabled="" value="">ELEGIR</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                    <option value="PHP">PHP</option>
+                    <option value="JAVASCRIPT">JAVASCRIPT</option>
+                    <option value="ANGULAR">ANGULAR</option>
+                    
+                </select>
+                <p class="errors"></p>
+                
+            </div>   
+            <div class="form-button">
+                
+                <input type="submit" value="Enviar">
+            </div>         
+        </form>
+        
+
+    </div>
+<script src="js/form.js"></script>
+    
+</body>
+</html>
